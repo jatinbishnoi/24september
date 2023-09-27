@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar with Different Border Styles</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Navigation Bar Styling */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        /* Navigation Item Styling */
+        .nav-item {
+            float: left;
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: white;
+            border-right: 1px solid transparent; /* Default border style */
+        }
+
+        /* Different Border Styles for Navigation Items */
+        .nav-item:nth-child(odd) {
+            border-style: solid;
+            border-width: 2px;
+            border-color: #ff5733; /* Red border for odd items */
+        }
+
+        .nav-item:nth-child(even) {
+            border-style: dotted;
+            border-width: 2px;
+            border-color: #33ff57; /* Green dotted border for even items */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a class="nav-item" href="#">Home</a>
+        <a class="nav-item" href="#">About Us</a>
+        <a class="nav-item" href="#">Contact</a>
+        <a class="nav-item" href="#">Blog</a>
+        <a class="nav-item" href="#">Login</a>
+    </div>
+</body>
+</html>
